@@ -1,2 +1,2 @@
 # playground
-For learning and experimenting with new languages.
+For learning and experimenting with git and new languages.
