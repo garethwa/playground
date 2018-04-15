@@ -1,3 +1,4 @@
+BDIR=./bin
 IDIR=./include
 LDIR=./lib
 SDIR=./src
@@ -18,7 +19,7 @@ OBJS  = $(patsubst %,$(ODIR)/%,$(_OBJS))
 $(ODIR)/%.o: $(SDIR)/%.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-hello-world: $(OBJS)
+$(BDIR)/hello-world: $(OBJS)
 	gcc -o $@ $^ $(CFLAGS) $(LIBS)
 
 .PHONY: clean
