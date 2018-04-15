@@ -34,7 +34,7 @@ fi
 
 if [ -z "$2" ]
 then
-	echo "ERROR: Please provide project language. Quitting."	
+	echo "ERROR: Please provide the language. Quitting."	
 	exit 1
 fi
 
