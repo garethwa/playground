@@ -3,7 +3,7 @@
 *.swp
 *.vims
 
-# project files
-/*/bin/*
-/*/lib/*
-/*/src/build/*
+# hello-world project files
+/hello-world/bin/*
+/hello-world/lib/*
+/hello-world/src/build/*
