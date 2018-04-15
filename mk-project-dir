@@ -1,0 +1,41 @@
+#!/bin/bash
+###############################################################################
+# Filename:	mk-project-dir
+# Description:	Create a directory structure for a new project. 
+# Usage:	
+#		mk-project-dir <project_name> <language>
+# 
+
+function create_c_directories {
+	project_name=$1
+	mkdir -p $project_name/lib
+	mkdir -p $project_name/bin
+	mkdir -p $project_name/etc
+	mkdir -p $project_name/src/build
+	mkdir -p $project_name/share/doc
+	mkdir -p $project_name/include
+} # end create_c_directories()
+
+
+if [ -z "$1" ]
+then
+	echo "ERROR: Please provide project name. Quitting."	
+	exit
+fi
+
+if [ -z "$2" ]
+then
+	echo "ERROR: Please provide project language. Quitting."	
+	exit
+fi
+
+case "$2" in
+	c)
+		create_c_directories $1
+		;;
+	*)
+		echo "Language '$2' not recognised. Quitting."
+		;;
+esac
+
+
