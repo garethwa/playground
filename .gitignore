@@ -4,6 +4,6 @@
 *.vims
 
 # project files
-bin/
+hello-world/bin/
 lib/
 src/build/
