@@ -7,7 +7,12 @@
 # 
 
 function create_c_directories {
-	project_name=$1
+	project_name=${1%/}
+	if [ ! -f "$project_name/README.md" ]
+	then
+		mkdir -p $project_name
+		echo "# $project_name" > $project_name/README.md
+	fi
 	mkdir -p $project_name/c/lib
 	mkdir -p $project_name/c/bin
 	mkdir -p $project_name/c/etc
