@@ -1,1 +1,9 @@
+# vim
+*~
+*.swp
 *.vims
+
+# project files
+./bin/*
+./lib/*
+./src/build/*
