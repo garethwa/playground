@@ -4,6 +4,6 @@
 *.vims
 
 # project files
-./*/bin/*
-./*/lib/*
-./*/src/build/*
+/*/bin/*
+/*/lib/*
+/*/src/build/*
